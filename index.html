@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Change this to your name-->
+    <meta name="author" content="Khushi Shaileshkumar Kotadia" />
+    <meta name="description" content="WEB222 Fall 2022 Assignment 5" />
+
+    <title>The Beauty Box</title>
+
+    <!-- Classless CSS Stylesheet - https://andybrewer.github.io/mvp/ -->
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css" />
+    <!-- Optional CSS Overrides -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+  </head>
+  <body class="content" style="max-width: 1200px">
+    <div>
+      <div class="w3-top w3-text-white w3-black">
+        <div class="w3-bar">
+          <a
+            class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+            href="javascript:void(0)"
+            onclick="myFunction()"
+            title="Toggle Navigation Menu"
+            ><i class="fa fa-bars"></i
+          ></a>
+          <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+          <a href="#store" class="w3-bar-item w3-button w3-padding-large w3-hide-small">STORE</a>
+        </div>
+      </div>
+
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+        style="margin-top: 46px"
+      >
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"
+          >ABOUT</a
+        >
+        <a href="#store" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"
+          >STORE</a
+        >
+      </div>
+    </div>
+
+    <section id="home">
+      <div class="main">
+        <div class="main-text">
+          <h1>
+            Welcome to,<br />
+            The Beauty Box
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <div class="about" id="about">
+        <div>
+          <h2 class="title">About Us</h2>
+          <div class="about-main">
+            <div class="about-text">
+              <p>"OUR GOAL IS TO PROVIDE YOU WITH THE BEST AND HAPPIEST PRODUCTS AROUND."</p>
+              <div style="margin-top: 40px">
+                <span class="w3-text-black social">
+                  <p style="color: white">Follow Us On:</p>
+                  <div class="w3-margin-top">
+                    <a href="#"><i class="fa fa-facebook-official w3-hover-opacity icons"></i></a>
+                    <a href="#"><i class="fa fa-instagram w3-hover-opacity icons"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity icons"></i></a>
+                    <a href="#"><i class="fa fa-twitter w3-hover-opacity icons"></i></a>
+                    <a href="#"><i class="fa fa-linkedin w3-hover-opacity icons"></i></a>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="store" id="store">
+      <div style="color: white; text-align: center; background-color: rgb(156, 105, 134)">
+        <h1>Our Store</h1>
+      </div>
+      <div id="category-menu">
+        <!-- Dynamically create your menu category buttons here -->
+      </div>
+
+      <main>
+        <h2 id="category">
+          <!-- Dynamically update the selected category title -->
+        </h2>
+
+        <div class="products"></div>
+      </main>
+    </div>
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/categories.js"></script>
+    <script src="./js/products.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
